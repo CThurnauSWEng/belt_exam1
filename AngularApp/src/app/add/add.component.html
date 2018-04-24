@@ -1,0 +1,12 @@
+<div class="formDiv">
+  <form (submit)="onSubmit()">
+      <label>Name:</label>
+      <input type="text" name="player.name" [(ngModel)]="player.name" />
+      <input type="text" name="player.position" [(ngModel)]="player.position" />
+      <p *ngIf="errorsPresent">Error: {{ errorMessage }}</p>
+      <div class="buttonDiv">
+          <button [routerLink]="['/dashboard']" class="blueButton">Cancel</button>
+          <input class="blueButton subButton" type="submit" value="Submit" />
+      </div>
+  </form>
+</div>

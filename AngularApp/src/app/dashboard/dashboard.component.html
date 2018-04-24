@@ -1,0 +1,20 @@
+
+
+<div *ngIf="playerDataAvailable">
+  <table>
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players">
+        <td>{{player.name}}</td>
+        <td>{{player.position}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
